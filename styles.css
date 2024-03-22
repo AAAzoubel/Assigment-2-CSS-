@@ -1,0 +1,78 @@
+:root {
+    --main-bg-color: #000;
+    --text-color: #fff;
+    --accent-color: #ffe81f;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: var(--main-bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .site-header, .site-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    padding: 0 1rem;
+  }
+  
+  nav a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2em; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+  }
+  
+  .movie-poster {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .poster-image {
+    max-width: 25%; 
+    height: auto;
+    margin: 0 auto; 
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    border: 3px solid var(--text-color);
+  }
+  
+  figcaption {
+    color: var(--text-color);
+    margin-top: 0.5rem;
+  }
+  
+  .site-footer {
+    font-size: 0.8rem;
+    padding: 1rem 0;
+    background: #111;
+  }
+  .movie-poster figure a {
+    text-decoration: underline; 
+    font-weight: bold; 
+    color: var(--accent-color); 
+    font-size: 1.1rem; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    
+}
+  
