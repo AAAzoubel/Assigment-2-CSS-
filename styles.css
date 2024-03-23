@@ -1,38 +1,39 @@
+/* Defines root-level custom properties (variables) for easy theme management */
 :root {
     --main-bg-color: #000;
     --text-color: #fff;
     --accent-color: #ffe81f;
   }
-  
+  /* Resets margin and padding to ensure consistency across browsers, and sets box-sizing to border-box for easier dimension calculations */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+  /* Sets global default styles for the body element */
   body {
     font-family: 'Arial', sans-serif;
     background: var(--main-bg-color);
     color: var(--text-color);
     line-height: 1.6;
   }
-  
+  /* Styles for the header and footer, making them center-aligned with padding */
   .site-header, .site-footer {
     text-align: center;
     padding: 1rem;
     background: #111;
   }
-  
+  /* Removes bullet points from navigation lists and removes padding for a cleaner look */
   nav ul {
     list-style: none;
     padding: 0;
   }
-  
+  /* Displays navigation list items inline with padding between them */
   nav li {
     display: inline-block;
     padding: 0 1rem;
   }
-  
+  /* Styles for navigation links: sans-serif font, uppercased, bold, with letter spacing for legibility */
   nav a {
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--text-color);
@@ -42,12 +43,12 @@
     text-transform: uppercase; 
     letter-spacing: 2px; 
   }
-  
+  /* Center-aligns content in the movie poster section and adds padding for spacing */
   .movie-poster {
     text-align: center;
     padding: 2rem;
   }
-  
+  /* Styles for the movie poster image: sets max width, auto height for aspect ratio, centering, and adds shadow and border for emphasis */
   .poster-image {
     max-width: 25%; 
     height: auto;
@@ -56,17 +57,19 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.6);
     border: 3px solid var(--text-color);
   }
-  
+  /* Styles for the figure caption: sets color and margin for spacing from the image */
   figcaption {
     color: var(--text-color);
     margin-top: 0.5rem;
   }
-  
+  /* Styles for the site footer: smaller font size and padding for a compact look */
   .site-footer {
     font-size: 0.8rem;
     padding: 1rem 0;
     background: #111;
   }
+    /* Additional styles for links within the movie poster figure: underlined, bold, colored with the accent color, and specified font size */
+  
   .movie-poster figure a {
     text-decoration: underline; 
     font-weight: bold; 
